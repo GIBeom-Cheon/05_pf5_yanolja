@@ -1,0 +1,175 @@
+#footer {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+#footer div.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  width: 90%;
+}
+#footer div.container div.logo {
+  margin-top: 20px;
+  display: block;
+  width: 210px;
+  height: 60px;
+  font-size: 0;
+  background-image: url(../img/logo_b2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#footer div.container div.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footer div.container div.info a.siren {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+#footer div.container div.info div.connect {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+#footer div.container div.info div.connect ul {
+
+}
+#footer div.container div.info div.connect ul li {
+
+}
+#footer div.container div.info div.connect ul li a {
+
+}
+#footer div.container div.info div.connect ul li span {
+
+}
+#footer div.container div.info a.address {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5 ;
+}
+#footer div.container div.comu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  
+}
+#footer div.container div.comu a.box {
+  display:block;
+  height: 70px;
+  width: 400px;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  line-height: 70px; 
+  padding-left: 18px;
+  position:relative;
+  vertical-align: middle;
+  transform: perspective(2px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+#footer div.container div.comu a.box::before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fe3478;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: transform 0.3s ease-out;
+}
+#footer div.container div.comu a.box::after{
+  content:"";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center center;
+  transform-origin: 0 50%;
+  position: absolute;
+  right: 10%;
+  bottom: calc(100% / 2 - 20px/2);
+}
+#footer div.container div.comu a.box:hover{
+  color: white;
+  border: 0;
+  margin-bottom: 1px;
+
+}
+#footer div.container div.comu a.box:hover::before{
+  transform: scaleX(1);
+  border: 0;
+}
+#footer div.container div.comu a.box:hover::after{
+  background-image: url(../img/plus1.svg);
+}
+#footer div.container div.comu p {
+  padding-left: 18px;
+}
+#footer div.container div.comu div.icon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 18px;
+}
+#footer div.container div.comu div.icon div.sns {
+  
+}
+#footer div.container div.comu div.icon div.sns ul {
+  display: flex;
+}
+#footer div.container div.comu div.icon div.sns ul li {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+  font-size: 0;
+  background-position: center center;
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(1){
+  background-image: url(../img/follow_linkedin.svg);
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(2){
+  background-image: url(../img/follow_fb.svg);
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(3){
+  background-image: url(../img/follow_insta.svg);
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(4){
+  background-image: url(../img/follow_npost.svg);
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(5){
+  background-image: url(../img/follow_youtube.svg);
+}
+#footer div.container div.comu div.icon div.sns ul li:nth-child(6){
+  background-image: url(../img/follow_twitter.svg);
+}
+#footer div.container div.comu div.icon div.award {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  background-position: center center;
+  background-image: url(../img/if_design_award_2022.svg);
+}
+#footer div.container div.comu div.icon div.award ul {
+
+}
+#footer div.container div.comu div.icon div.award ul li {
+
+}

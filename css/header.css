@@ -1,0 +1,122 @@
+#gnbWhite {
+  width: 100%;
+  margin: 0 auto; 
+}
+
+#gnbWhite div.container {
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+#gnbWhite div.container div.logo {
+  display:block;
+  width: 110px;
+  height: 31px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+}
+#gnbWhite div.container div.logo a {
+  
+}
+#gnbWhite div.container div.logo a span {
+  
+}
+#gnbWhite div.container ul.menu {
+  display:flex;
+  justify-content: space-between;
+
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 600px);
+/* 실험*/
+  width: 1200px;
+  
+  
+ 
+}
+#gnbWhite div.container ul.menu::before{
+  content: "";
+  background-color: white;
+  width: calc(100% + 30% * 2);
+  height: 230px;
+  z-index:-1;
+  transition: all 1s;
+  position: absolute;
+  display: none;
+  left: -30%;
+  top: -50px;
+  transition: all 0.5s;
+  animation: dropdown;
+  animation-duration: 0.3s;
+}
+@keyframes dropdown{
+  from{ 
+    opacity: 1;
+    transform: translateY(-230px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#gnbWhite div.container:hover ul.menu::before{
+  display: block;
+}
+#gnbWhite div.container ul.menu li.gnb {
+  
+}
+#gnbWhite div.container ul.menu li:hover > ul.gnbsub{
+ 
+}
+#gnbWhite div.container ul.menu li.gnb h4.gnbTitle {
+  
+}
+#gnbWhite div.container ul.menu li.gnb h4.gnbTitle a:hover ul.gnbSub{
+  
+}
+#gnbWhite div.container ul.menu li.gnb h4.gnbTitle a {
+  color: white;
+}
+#gnbWhite div.container:hover ul.menu li.gnb h4.gnbTitle a{
+  color: black;
+}
+#gnbWhite div.container ul.menu li.gnb ul.gnbSub {    /*메인타이틀의 서브타이틀*/
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  display: none;
+  position: absolute;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+#gnbWhite div.container:hover ul.menu li ul.gnbSub{
+  display: block;
+  margin-top: 7px;
+}
+#gnbWhite div.container ul.menu li ul.gnbSub li {  
+   
+}
+
+#gnbWhite div.container ul.menu li ul.gnbSub li a {
+  color: gray;  
+  
+}
+#gnbWhite div.container ul.language {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+#gnbWhite div.container ul.language li {
+  
+}
+#gnbWhite div.container ul.language li a {
+  color: white;
+}

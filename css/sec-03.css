@@ -1,0 +1,121 @@
+#sec-03 {
+    margin-top: 150px;
+    }
+#sec-03 div.container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: space-between;
+    padding: 5%;
+/*     box-sizing: border-box; */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#sec-03 div.container div.left-text {
+    display: block;
+    width: 50%;
+    height: auto;
+    position:relative;
+}
+#sec-03 div.container div.left-text p.text1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#sec-03 div.container div.left-text h1 {
+    margin-top: 20px;
+    font-size: 100px;
+}
+#sec-03 div.container div.left-text p.text2 {
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+#sec-03 div.container div.left-text a.box {
+    display:block;
+    position: absolute;
+    height: 80px;
+    width: 400px;
+    border: 1px solid black;
+    font-size: 26px;
+    line-height: 80px; 
+    padding-left: 18px;
+    position:relative;
+    vertical-align: middle;
+    transform: perspective(2px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-property: color;
+    transition-duration: 0.3s;
+
+}
+#sec-03 div.container div.left-text a.box::before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fe3478;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-out;
+}   
+#sec-03 div.container div.left-text a.box:hover{
+    color: white;
+    border-color: transparent;
+    padding-left: 3%;
+    transition: all 0.3s;
+}
+#sec-03 div.container div.left-text a.box:hover::after{
+    background-image: url(../img/arrow_b.svg);
+}
+#sec-03 div.container div.left-text a.box:hover::before{
+    transform: scaleX(1);
+    border: 0;
+}
+#sec-03 div.container div.left-text a.box::after{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/arrow_b1.svg);
+    background-repeat: no-repeat;
+    background-position:  center center;
+    background-size:contain;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+#sec-03 div.container div.right-img{
+    display: block;
+    width: 50%;
+    height: auto;
+    position: relative;
+
+}
+#sec-03 div.container div.right-img div.sec3holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 200px;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#sec-03 div.container div.right-img div.sec3holder img:nth-child(1){
+    
+}
+#sec-03 div.container div.right-img div.sec3holder img:nth-child(2){
+    border-radius: 50%;
+    transform:translateY(80%);
+}
+#sec-03 div.container div.right-img div.sec3holder img:nth-child(3){
+    transform:translateY(-20%);
+}
+#sec-03 div.container div.right-img div.sec3holder img:nth-child(4){
+    transform:translateY(40%);
+}
+#sec-03 div.container div.right-img div.sec3holder img:nth-child(5){
+    border-radius: 50%;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<style>
+  .fill{
+    fill: white;
+  }
+</style>
+  <g id="그룹_11568" data-name="그룹 11568" transform="translate(-677 -1314.5)">
+    <line class="fill" id="선_1609" data-name="선 1609" x2="30" transform="translate(677 1329.5)" fill="white" stroke="#000" stroke-width="4"/>
+    <line class="fill" id="선_1610" data-name="선 1610" x2="30" transform="translate(692 1314.5) rotate(90)" fill="white" stroke="#000" stroke-width="4"/>
+  </g>
+</svg>
